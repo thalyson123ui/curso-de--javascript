@@ -2,7 +2,7 @@
 
 // função sem parâmetros
 function saudacao() {
-    console.log("Olá, seja bem-vindo!");
+    console.log("Olá, seja bem-vindo thalyson!");
 }
 
 // chamando a função
