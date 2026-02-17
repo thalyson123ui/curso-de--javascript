@@ -1,12 +1,9 @@
-// operador ternário
-const idade = 20;
-const podeBeber = idade >= 18 ? 'Pode beber' : 'Não pode beber';
-console.log(podeBeber); // Pode beber
+let st="I"
+res=(st == "A" ? "Ativo" : "Inativo")
+console.log(res)
 
-// exemplo com mais de duas condições
-const nota = 85;
-const conceito = nota >= 90 ? 'A' :
-                 nota >= 80 ? 'B' :
-                 nota >= 70 ? 'C' :
-                 nota >= 60 ? 'D' : 'F';
-console.log(conceito); // B
+//0 = False
+//1 = True
+
+// Teste lógico ? se verdadeiro : se falso
+

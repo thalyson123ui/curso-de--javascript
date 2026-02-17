@@ -1,34 +1,8 @@
-// funções em JavaScript
-
-// função sem parâmetros
-function saudacao() {
-    console.log("Olá, seja bem-vindo thalyson!");
+function mudarTexto(){
+    let d1=document.getElementById("d1")
+    let d2=document.getElementById("d2")
+    let d3=document.getElementById("d3")
+    d1.innerHTML="CFB Cursos"
+    d2.innerHTML="CFB Cursos"
+    d3.innerHTML="CFB Cursos"
 }
-
-// chamando a função
-saudacao();
-
-// função com parâmetros
-function soma(a, b) {
-    return a + b;
-}
-
-// chamando a função com argumentos
-let resultado = soma(5, 3);
-console.log("A soma é: " + resultado);
-
-// função anônima atribuída a uma variável
-let multiplicacao = function(x, y) {
-    return x * y;
-};
-
-// chamando a função anônima
-let produto = multiplicacao(4, 6);
-console.log("O produto é: " + produto);
-
-// função arrow (função de seta)
-let divisao = (m, n) => m / n;
-
-// chamando a função arrow
-let quociente = divisao(10, 2);
-console.log("O quociente é: " + quociente);

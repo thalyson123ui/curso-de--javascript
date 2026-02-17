@@ -1,24 +1,12 @@
-// loop while no javaScript//
-let contador = 0;
+//5! = 5*4*3*2*1 = 120
 
-while (contador < 5) {
-    console.log("Contagem: " + contador);
-    contador++;
+let n=10
+let fat=1
+
+while(n>=1){
+    fat*=n
+    //fat=fat*n
+    n--
 }
 
-// Exemplo com strings
-var fruta = "banana";
-
-switch (fruta) {
-    case "maçã":
-        console.log("Fruta: Maçã");
-        break;
-    case "banana":
-        console.log("Fruta: Banana");
-        break;
-    case "laranja":
-        console.log("Fruta: Laranja");
-        break;
-    default:
-        console.log("Fruta desconhecida");
-}
+console.log(fat)

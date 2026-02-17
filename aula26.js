@@ -1,44 +1,13 @@
-// função dentro de outra função em JavaScript
-
-function saudacao(nome) {
-    function mensagem() {
-        return "Olá, " + nome + "! Bem-vindo!";
-    }
-    return mensagem();
+const somar=val=>{
+    let res=0
+    for(v of val)
+        res+=v
+    return res
+}
+const soma=(...valores)=>{
+    return somar(valores)
 }
 
-// chamando a função
-let resultado = saudacao("Thalyson");
-console.log(resultado); // "Olá, Thalyson! Bem-vindo!"
-
-// função aninhada com acesso à variável externa
-function contador() {
-    let count = 0;
-    function incrementar() {
-        count++;
-        return count;
-    }
-    return incrementar;
-}
-
-let meuContador = contador();
-console.log(meuContador()); // 1
-console.log(meuContador()); // 2
-console.log(meuContador()); // 3
-
-// função aninhada usada como callback
-function executarDepoisDe2Segundos(callback) {
-    setTimeout(callback, 2000);
-}
-
-executarDepoisDe2Segundos(function() {
-    console.log("Esta mensagem foi exibida após 2 segundos.");
-});
-
-// função aninhada usada em um evento
-document.getElementById("meuBotao").addEventListener("click", function() {
-    function mostrarAlerta() {
-        alert("Botão clicado!");
-    }
-    mostrarAlerta();
-});
+console.log(soma(10,5,15))
+valor=[10,5,15]
+console.log(soma(...valor))

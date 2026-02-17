@@ -1,16 +1,16 @@
-// loop for of e loop for in no javaScript//
-let frutas = ["maçã", "banana", "laranja"];
+const objs=document.getElementsByTagName("div")
 
-for (let fruta of frutas) {
-    console.log("Fruta: " + fruta);
+let num=[10,20,30,40,50]
+
+for(let i=0; i<num.length; i++){
+    console.log(num[i])
 }
 
-let pessoa = {
-    nome: "João",
-    idade: 30,
-    cidade: "São Paulo"
-};
+for(o of objs){
+    console.log(o.innerHTML="Curso")
+}
 
-for (let chave in pessoa) {
-    console.log(chave + ": " + pessoa[chave]);
+for(o in objs){
+    console.log(objs[o].innerHTML)
+    //console.log(o)
 }

@@ -1,13 +1,6 @@
-// while e do while
-
-let contador = 0
-
-while (contador < 10) {
-    console.log(contador)
-    contador++
-}
-
-do {
-    console.log(contador)
-    contador++
-} while (contador < 20)
+let n=10
+do{
+    console.log("CFB Cursos")
+    n++
+}while(n<10)
+console.log("Fim do programa")

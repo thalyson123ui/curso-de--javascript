@@ -1,31 +1,17 @@
-// adicionando eventos com addEventListener
+//const c1=document.getElementById("c1")
+//const c1=document.querySelector("#c1")
+const cursos=[...document.querySelectorAll(".curso")]
 
-const h1 = document.querySelector('h1');
+cursos.map((el)=>{
+    el.addEventListener("click",(evt)=>{
+        const el=evt.target
+        el.classList.add("destaque")
+        console.log(el.innerHTML + " foi clicado")
+    })
+})
 
-function callback() {
-    console.log('Clicou no h1');
-}
+// c1.addEventListener("click",(evt)=>{
+//     const el=evt.target
+//     el.classList.add("destaque")
+// })
 
-h1.addEventListener('click', callback);
-
-// adicionando um evento de mouseover
-h1.addEventListener('mouseover', () => {
-    console.log('Mouse sobre o h1');
-});
-
-// adicionando um evento de mouseout
-h1.addEventListener('mouseout', () => {
-    console.log('Mouse saiu do h1');
-});
-
-// adicionando um evento de keydown
-document.addEventListener('keydown', (event) => {
-    console.log(`Tecla pressionada: ${event.key}`);
-});
-
-// adicionando um evento de submit a um formulário
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); // impede o envio do formulário
-    console.log('Formulário enviado');
-});

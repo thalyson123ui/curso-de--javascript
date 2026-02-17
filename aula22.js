@@ -1,45 +1,26 @@
-// funções parametrizadas em JavaScript
+const VALOR_PADRAO=0
 
-// função que recebe um nome e exibe uma saudação personalizada
-function saudacao(nome) {
-    console.log("Olá, " + nome + "! Seja bem-vindo!");
+function add(v){
+    valor+=v
 }
 
-// chamando a função com um argumento
-saudacao("Thalyson");
+let valor=0
+console.log(valor)
 
-// função que recebe dois números e retorna a soma
-function soma(a, b) {
-    return a + b;
+add(10)
+console.log(valor)
+
+add(5)
+console.log(valor)
+
+
+
+
+function soma(n1=VALOR_PADRAO,n2=VALOR_PADRAO){
+    let res
+    res=n1+n2
+    return res
 }
 
-// chamando a função e armazenando o resultado
-let resultadoSoma = soma(7, 5);
-console.log("A soma é: " + resultadoSoma);
-
-// função que recebe um número e retorna o quadrado
-function quadrado(num) {
-    return num * num;
-}
-
-// chamando a função e armazenando o resultado
-let resultadoQuadrado = quadrado(4);
-console.log("O quadrado é: " + resultadoQuadrado);
-
-// função que recebe dois números e retorna o maior
-function maior(x, y) {
-    return x > y ? x : y;
-}
-
-// chamando a função e armazenando o resultado
-let resultadoMaior = maior(10, 20);
-console.log("O maior número é: " + resultadoMaior);
-
-// função que recebe um nome e retorna uma mensagem personalizada
-function saudacaoPersonalizada(nome) {
-    return "Olá, " + nome + "! Seja bem-vindo!";
-}
-
-// chamando a função e armazenando o resultado
-let mensagem = saudacaoPersonalizada("Thalyson");
-console.log(mensagem);
+let resultado_soma=soma(5)
+//console.log(resultado_soma)

@@ -1,20 +1,15 @@
-// operadores logicos em JavaScript
-console.log(15 > 10 && 5 < 3); // E lógico
-console.log(15 > 10 || 5 < 3); // OU lógico
-console.log(!(15 > 10));       // NÃO lógico
+// && -> and e
+// || -> or ou
+// ! -> not não
 
-// operadores de atribuição compostos
-let a = 20;        // atribuição simples
-a += 10;           // adição e atribuição
-a -= 5;            // subtração e atribuição
-a *= 2;            // multiplicação e atribuição
-a /= 5;            // divisão e atribuição
+let n1,n2,n3,n4
+n1=10
+n2=5
+n3=15
+n4=2
 
-console.log(a);
-
-// operadores de incremento e decremento
-let b = 8;
-console.log(b++); // pós-incremento
-console.log(++b); // pré-incremento
-console.log(b--); // pós-decremento
-console.log(--b); // pré-decremento
+if( !(n1>n2) && (n3>n4) ){
+    console.log("verdadeiro")
+}else{
+    console.log("falso")
+}

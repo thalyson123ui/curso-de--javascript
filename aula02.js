@@ -1,5 +1,6 @@
-// modo estrito do JavaScript
-"use strict";
+"use strict"
 
-console.log("Bem-vindo ao meu segundo arquivo JavaScript!");
-console.log("Estou aprendendo sobre 'use strict' e boas práticas.");
+let nome="Bruno"
+console.log("CFB Cursos")
+console.log(nome)
+console.log("Nome: " + nome)
